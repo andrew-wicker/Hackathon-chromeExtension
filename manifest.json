@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "PokeSearch!",
+  "name": "PokéSearch!",
   "version": "1.0",
-  "description": "Search your favorite pokemon and view their stats!",
+  "description": "Search your favorite pokémon and view their stats!",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -25,7 +25,14 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "permissions": ["activeTab", "storage", "contextMenus"],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "fontSettings",
+    "pageCapture",
+    "webRequest"
+  ],
   "web_accessible_resources": [
     {
       "resources": ["images/*"],

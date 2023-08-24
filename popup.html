@@ -14,21 +14,20 @@
         background-position: center;
         background-size: auto 650px;
       }
-      @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
     </style>
 
-    <title>Gio & Andrew's Chrome Extension</title>
+    <title>PokéSearch Chrome Extension!</title>
   </head>
 
   <body>
     <div class="wrapper">
-      <img id="topLogo" src="assets/pokeLogo.png" />
+      <img id="topLogo" src="/assets/pokeLogo.png" />
       <!-- <h2>Pokemon</h2> -->
       <div class="pokeSearch">
-        <input id="pokeSearchText" type="text" placeholder="Enter Pokemon" />
+        <input id="pokeSearchText" type="text" placeholder="Enter Pokémon" />
         <button id="myButton">Search</button>
       </div>
     </div>
+    <script defer src="background.js"></script>
   </body>
-  <script defer src="background.js"></script>
 </html>
