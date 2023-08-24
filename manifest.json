@@ -3,9 +3,6 @@
 	"name": "Gio & Andrew's Extension",
 	"version": "1.0",
 	"description": "A brief description of your extension",
-	"permissions": [
-		"activeTab" // Permissions required by your extension
-	],
 	"action": {
 		"default_popup": "popup.html", // The popup HTML file
 		"default_icon": {
@@ -31,6 +28,7 @@
 	"permissions": [
 		"activeTab", // Permissions required by your extension
 		"storage" // Optional permissions
+        "contextMenus",
 	],
 	"web_accessible_resources": [
 		{
