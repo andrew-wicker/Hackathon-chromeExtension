@@ -1,5 +1,6 @@
 {
   "manifest_version": 3,
+  "name": "PokeSearch!",
   "version": "1.0",
   "description": "Search your favorite pokemon and view their stats!",
   "action": {
