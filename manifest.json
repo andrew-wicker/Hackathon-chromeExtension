@@ -1,0 +1,41 @@
+{
+	"manifest_version": 3, // Use Manifest Version 3 (Mandatory for new extensions)
+	"name": "Gio & Andrew's Extension",
+	"version": "1.0",
+	"description": "A brief description of your extension",
+	"permissions": [
+		"activeTab" // Permissions required by your extension
+	],
+	"action": {
+		"default_popup": "popup.html", // The popup HTML file
+		"default_icon": {
+			"16": "icons/icon16.png", // Icon file paths
+			"48": "icons/icon48.png",
+			"128": "icons/icon128.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"], // Which URLs your content script can run on
+			"js": ["content.js"] // The content script file
+		}
+	],
+	"background": {
+		"service_worker": "background.js" // The background script file
+	},
+	"icons": {
+		"16": "icons/icon16.png", // Icon file paths
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+	"permissions": [
+		"activeTab", // Permissions required by your extension
+		"storage" // Optional permissions
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["images/*"], // Files accessible from web pages
+			"matches": ["<all_urls>"]
+		}
+	]
+}
